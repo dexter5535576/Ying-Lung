@@ -1,0 +1,230 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: Comic Sans MS;
+}
+
+#main
+{
+	width: 100%;
+	height: 100vh;
+	background: -webkit-radial-gradient(ellipse,r,black);
+	background: -o-radial-gradient(ellipse,white,black);
+	background: -moz-radial-gradient(ellipse,white,black);
+	background: radial-gradient(ellipse,white,black);
+	height: 100vh; 
+	background-size: cover;
+}
+
+nav
+{
+	width: 100;
+	height: 80px;
+	background-color: #0002;
+	line-height: 80px;
+}
+
+nav ul
+{
+	float: right;
+	margin-right: 30px;
+}
+
+nav ul li
+{
+	list-style-type: none;
+	display: inline-block;
+	transition: all 0.7s ;
+}
+
+nav ul li:hover
+{
+	background-color: #f39d1a;
+}
+
+
+nav ul li a
+{
+	text-decoration: none;
+	color: #fff;
+	padding: 30px;
+}
+
+.logo img
+{
+	position: absolute;
+	width: 80px;
+	height: auto;
+	left: 30px;
+}
+
+.name
+{
+	list-style: none;
+	position: absolute;
+	left: 50%;
+	top: 30%;
+	transform: translateX(-50%) translateY(-50%);
+	color: black;
+}
+
+.title
+{
+	list-style: none;
+	position: absolute;
+	left: 50%;
+	top: 35%;
+	transform: translateX(-50%) translateY(-50%);
+	color: black;
+}
+
+.description
+{
+	list-style: none;
+	position: absolute;
+	left: 50%;
+	top: 40%;
+	transform: translateX(-50%) translateY(-50%);
+	color: black;
+}
+
+.cardBox
+{ 
+	position: relative;
+	top: 40%;
+	left: 35%;
+	width:150px; 
+	height:150px; 
+	margin:15px; 
+	float:left; 
+	
+}
+.cardBox > .FacebookFront
+{
+	position:absolute;
+	transform: perspective( 600px ) rotateY( 0deg );
+	background: #3b5998; width:150px; height:150px; border-radius: 7px;
+	backface-visibility: hidden;
+	transition: .5s ease;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	box-shadow: 0 30px 30px rgba(0,0,0,.5);
+	transform-style: preserve-3d;
+	font-size: 40px;
+	text-decoration: none;
+	color: black;
+
+}
+.cardBox > .FacebookBack
+{
+	position:absolute;
+	transform: perspective( 600px ) rotateY( 180deg );
+	background: #3b5998; width:150px; height:150px; border-radius: 7px;
+	backface-visibility: hidden;
+	transition: .5s ease;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	box-shadow: 0 30px 30px rgba(0,0,0,.5);
+	transform-style: preserve-3d;
+	font-family: Verdana;
+	font-size: 20px;
+	text-decoration: none;
+	color: black;
+	
+}
+.cardBox > .TwitterFront
+{
+	position:absolute;
+	transform: perspective( 600px ) rotateY( 0deg );
+	background: #00aced; width:150px; height:150px; border-radius: 7px;
+	backface-visibility: hidden;
+	transition: .5s ease;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	box-shadow: 0 30px 30px rgba(0,0,0,.5);
+	transform-style: preserve-3d;
+	font-size: 40px;
+	text-decoration: none;
+	color: black;
+}
+.cardBox > .TwitterBack
+{
+	position:absolute;
+	transform: perspective( 600px ) rotateY( 180deg );
+	background: #00aced; width:150px; height:150px; border-radius: 7px;
+	backface-visibility: hidden;
+	transition: .5s ease;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	box-shadow: 0 30px 30px rgba(0,0,0,.5);
+	transform-style: preserve-3d;
+	font-family: Verdana;
+	font-size: 20px;
+	text-decoration: none;
+	color: black;
+}
+.cardBox > .googleFront
+{
+	position:absolute;
+	transform: perspective( 600px ) rotateY( 0deg );
+	background: #dd4b39; width:150px; height:150px; border-radius: 7px;
+	backface-visibility: hidden;
+	transition: .5s ease;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	box-shadow: 0 30px 30px rgba(0,0,0,.5);
+	transform-style: preserve-3d;
+	font-size: 40px;
+	text-decoration: none;
+	color: black;
+}
+.cardBox > .googleBack
+{
+	position:absolute;
+	transform: perspective( 600px ) rotateY( 180deg );
+	background: #dd4b39; width:150px; height:150px; border-radius: 7px;
+	backface-visibility: hidden;
+	transition: .5s ease;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	box-shadow: 0 30px 30px rgba(0,0,0,.5);
+	transform-style: preserve-3d;
+	font-family: Verdana;
+	font-size: 20px;
+	text-decoration: none;
+	color: black;
+}
+.cardBox:hover > .FacebookFront
+{
+	transform: perspective( 600px ) rotateY( -180deg );
+}
+.cardBox:hover > .FacebookBack
+{
+	transform: perspective( 600px ) rotateY( 0deg );
+}
+.cardBox:hover > .TwitterFront
+{
+	transform: perspective( 600px ) rotateY( -180deg );
+}
+.cardBox:hover > .TwitterBack
+{
+	transform: perspective( 600px ) rotateY( 0deg );
+}
+
+.cardBox:hover > .googleFront
+{
+	transform: perspective( 600px ) rotateY( -180deg );
+}
+.cardBox:hover > .googleBack
+{
+	transform: perspective( 600px ) rotateY( 0deg );
+}
+
+

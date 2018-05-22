@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Main Page</title>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Herr Von Muellerhoff' rel='stylesheet'>
+		<style>
+		fly-animation  
+		{
+			font-family: 'Herr Von Muellerhoff';font-size: 22px;
+		}
+		</style>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		</style>
+		
+	</head>
+	
+	<body>
+		<div id="main">
+		
+				<nav>
+					<div class="logo">
+					<img src="icon1.png" width ="80" height = "80" >
+					</div>
+				
+					<ul>
+						<li><a href="#"><i class="fa fa-search"></a></i>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="About.html">About</a></li>
+					</ul>
+					
+				</nav>				
+				
+				
+				
+		</div>
+		
+		<dir class="fly-animation hidden">
+			<li>P</li>
+			<li>i</li>
+			<li>a</li>
+			<li>n</li>
+			<li>o</li>
+			<li> </li>
+			<li>W</li>
+			<li>o</li>
+			<li>r</li>
+			<li>l</li>
+			<li>d</li>
+		</dir>
+        
+        
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript">
+	
+			$(function() {
+				setTimeout(function() {
+					$('.fly-animation').removeClass('hidden');
+				}, 500);
+			})();
+		</script>
+		
+	</body>
+</html> 
